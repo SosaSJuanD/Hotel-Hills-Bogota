@@ -1,0 +1,24 @@
+.sobre_nosotros {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.container {
+    padding-right: 6%;
+    padding-left: 6%;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .sobre_nosotros {
+        display: flex;
+    }
+    .sobre_nosotros__contenido {
+        margin-right: 4rem;
+    }
+
+    .container {
+        padding-left: calc((100% - 940px)/2);
+        padding-right: calc((100% - 940px)/2);
+    }
+}
