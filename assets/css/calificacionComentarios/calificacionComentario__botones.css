@@ -1,0 +1,20 @@
+.comentarios__boton {
+    color: var(--boton-rojo);
+
+    font-family: Pacifico, cursive;
+
+    border-color: var(--boton-rojo);
+
+    margin-top: 1.25rem;
+}
+
+.calificacion__boton{
+    color: var(--boton-rojo);
+
+    font-family: Pacifico, cursive;
+
+    border-color: var(--boton-rojo);
+
+    margin-top: 1.25rem;
+
+}

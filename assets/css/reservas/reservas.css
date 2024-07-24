@@ -1,0 +1,39 @@
+.reservas{
+    padding: 5rem;
+    text-align: center;
+}
+
+.resevas__paginas{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+
+@media screen and (min-width: 0){
+    .resevas__paginas{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .resevas__paginas{
+        flex-direction: row;
+    }
+}
+
+.pagina{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:0){
+    .pagina{
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width:768px){
+    .pagina{
+        margin-bottom: 0;
+    }
+}
