@@ -24,6 +24,7 @@
         <link rel="stylesheet" href="./assets/css/cabecera/menu/menu-lista.css">
 
         <!--  Carrusel  -->
+        <link rel="stylesheet" href="./assets/css/carrusel/slider.css">
 
         <!-- Sobre nosotros -->
         <link rel="stylesheet" href="./assets/css/sobreNosotros/sobre-nosotros.css">
@@ -35,6 +36,7 @@
 
 
         <!-- Habitaciones -->   
+        
 
         <!-- Comentarios y Calificaciones -->
         <link rel="stylesheet" href="./assets/css/calificacionComentarios/calificacionComentarios.css">
@@ -48,7 +50,7 @@
         <link rel="stylesheet" href="./assets/css/reservas/reservas.css">
         <link rel="stylesheet" href="./assets/css/reservas/reservas-imagen.css">
         <!-- Footer -->
-        
+        <link rel="stylesheet" href="./assets/css/footer/footer.css">
 
     </head>
 
@@ -71,7 +73,54 @@
 
         <section class="carrusel">
 
+            <div id="slider">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <input type="radio" name="slider" id="slide4">
+                <div id="slides">
+                    <div id="overflow">
+                        <div class="inner">
+                            <div class="slide slide_1">
+                                <div class="slide-content">
+                                    <img src="assets/img/SALA 2 PISO.jpeg" alt="SALA">
+                                </div>
+                            </div>
+                            <div class="slide slide_2">
+                                <div class="slide-content">                                    
+                                    <img src="assets/img/habitaciones/HABITACIONSENCILLA.jpeg" alt="SALA">
+                                </div>
+                            </div>
+                            <div class="slide slide_3">
+                                <div class="slide-content">
+                                    <img src="assets/img/habitaciones/TWIN 302.jpeg" alt="SALA">
+                                </div>
+                            </div>
+                            <div class="slide slide_4">
+                                <div class="slide-content">
+                                    <img src="assets/img/HGER.jpg" alt="SALA">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="controls">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                </div>
+                <div id="bullets">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                </div>
+            </div>
+
         </section>
+
+        
 
 
         <section class="sobre_nosotros container">
@@ -150,6 +199,25 @@
                 </div>
             </div>
         </section>
+
+        <footer class="footer container">
+            <img src="assets/img/HGER.jpg" alt="Logo de Apeperia" class="footer__logo">
+            <ul class="footer__social">
+                <li><a href="#" class="footer__midia"><img src="img/facebook.png" alt="Ícono de Facebook"></a></li>
+                <li><a href="#" class="footer__midia"><img src="img/instagram.png" alt="Ícono de Instagram"></a></li>
+                <li><a href="#" class="footer__midia"><img src="img/twitter.png" alt="Ícono de Twitter"></a></li>
+            </ul>
+            <nav>
+                <ul class="footer__navegacion">
+                    <li class="footer__enlace"><a href="#">Sobre</a></li>
+                    <li class="footer__enlace"><a href="#">Planes</a></li>
+                    <li class="footer__enlace"><a href="#">Blog</a></li>
+                    <li class="footer__enlace"><a href="#">Destacados</a></li>
+                    <li class="footer__enlace"><a href="#">Institucional</a></li>
+                    <li class="footer__enlace"><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </footer>
 
     </body>
 
