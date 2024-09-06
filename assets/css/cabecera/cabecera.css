@@ -1,16 +1,20 @@
 .cabecera { 
     align-items: center;
-    background: #f9f9f9;
+    background: #6eb5c0;
     display: flex;
     justify-content: space-between;
     padding-left: 2rem;
     padding-right: 2rem;
+    position: fixed;
+    top: 0;
 }
 
 @media screen and (min-width:0) {
     .cabecera{
         padding: 0 1rem;
         justify-content: center;
+        position: fixed;
+        top: 0;
     }
 }
 
@@ -18,5 +22,7 @@
     .cabecera{
         padding: 0 5rem;
         justify-content: space-between;
+        position: fixed;
+        top: 0;
     }
 }
