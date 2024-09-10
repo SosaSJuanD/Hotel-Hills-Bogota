@@ -105,6 +105,28 @@
     border-color: var(--planes-card-mega);
 }
 
+.tarjetas__imagen {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+
+
 @media screen and (min-width:1024px) {
     .planes__tarjetas {
         flex-direction: row;
@@ -112,6 +134,14 @@
         align-items: flex-end;
     }
     .tarjetas {
+        max-width: 300px;
+    }
+    .carousel-item .row {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .col-lg-4 {
         max-width: 300px;
     }
 }
