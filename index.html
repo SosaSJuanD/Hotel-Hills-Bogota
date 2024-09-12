@@ -288,7 +288,7 @@
                 <nav>
                     <ul class="contenidoPrincipal-cursos">
                         <li class="contenidoPrincipal-cursos-link"><a href="./assets/pages/sitiosDeInteres/turismo.html">Turismo</a></li>
-                        <li class="contenidoPrincipal-cursos-link"><a href="./assets/pages/sitiosDeInteres/universidades.html">Universidades</a></li>
+                        <li class="contenidoPrincipal-cursos-link"><a href="./assets/pages/prueba.html">Universidades</a></li>
                         <li class="contenidoPrincipal-cursos-link"><a href="#">Eventos y cultura</a></li>
                         <li class="contenidoPrincipal-cursos-link"><a href="#">Centros empresariales</a></li>
                         <li class="contenidoPrincipal-cursos-link"><a href="#">bancos y finanzas</a></li>
@@ -336,7 +336,37 @@
             </div>
         </section>
 
-        <footer class="footer container" id="contacto">
+        <section class="whatsapp-flotante">
+            <div class="whatsapp-icon">
+                <a href="https://wa.me/1234567890" target="_blank">
+                    <img src="assets/img/reservas/whatsapp-.png" alt="WhatsApp">
+                </a>
+            </div>
+        </section>
+
+        <style>
+            .whatsapp-icon {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                z-index: 1000; /* Asegura que el logo esté por encima de otros elementos */
+            }
+
+            .whatsapp-icon img {
+                width: 50px; /* Tamaño del logo, ajusta según sea necesario */
+                height: 50px;
+                cursor: pointer;
+            }
+
+            @media (max-width: 768px) {
+                .whatsapp-icon img {
+                    width: 40px; /* Tamaño del logo en pantallas pequeñas */
+                    height: 40px;
+                }
+            }
+        </style>
+
+        <footer class="footer" id="contacto">
             <!-- <img src="assets/img/HGER.jpg" alt="Logo de Apeperia" class="footer__logo">
             <ul class="footer__social">
                 <li><a href="#" class="footer__midia"><img src="assets/img/reservas/booking.jpeg" alt="Ícono de Facebook"></a></li>

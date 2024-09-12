@@ -63,6 +63,31 @@ body {
     transform: rotateY(180deg);
 }
 
+/* Estilos del botón */
+.btn-maps {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 15px;
+    font-size: 14px;
+    color: white;
+    background-color: #3498db;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-maps:hover {
+    background-color: #2980b9;
+}
+
+.flip_img {
+    width: 100%; /* Ocupar todo el ancho disponible */
+    height: 100%; /* Ocupar toda la altura disponible */
+    object-fit: cover; /* Ajustar la imagen para cubrir el espacio manteniendo las proporciones */
+    border-radius: 5px; /* Opcional: redondear las esquinas si lo prefieres */
+}
+
+
 /* Responsividad */
 @media (max-width: 1024px) {
     .flip-card {
@@ -73,6 +98,10 @@ body {
 @media (max-width: 768px) {
     .flip-card {
         width: 48%; /* 2 tarjetas por fila */
+    }
+    .btn-maps {
+        padding: 8px 16px;
+        font-size: 12px;
     }
 }
 
@@ -92,5 +121,14 @@ body {
     .flip-card-inner {
         margin: 0; /* Asegura que la tarjeta ocupe todo el ancho sin margen adicional */
     }
+    .btn-maps {
+        padding: 6px 12px;
+        font-size: 10px;
+    }
 }
+
+
+
+
+
 
