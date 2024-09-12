@@ -50,9 +50,9 @@
 
 
 
-/* 
 
-@media(min-width: 769px) {
+
+@media(max-width: 769px) {
 
 	.container {
 		width: 85%;	
@@ -95,6 +95,6 @@
 	.contenidoPrincipal-cursos-link:nth-child(4n+1) {
 		margin-left: 0;
 	}
-} */
+}
 
 

@@ -1,10 +1,18 @@
 .pagina__imagen{
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     margin: 0 auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 100%;
+    border-radius: 80px 10px;
     
+}
+
+@media (max-width: 768px) {
+    .pagina__imagen {
+        height: 150px; 
+        width: 150px;
+        border-radius: 40px 5px; 
+    }
 }

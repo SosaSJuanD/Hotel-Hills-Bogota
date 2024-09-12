@@ -1,0 +1,25 @@
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Asegura que el logo esté por encima de otros elementos */
+}
+
+.whatsapp-icon img {
+    width: 50px; /* Tamaño del logo, ajusta según sea necesario */
+    height: 50px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .whatsapp-icon{
+        position: fixed;
+    }
+    .whatsapp-icon img {
+        width: 40px; /* Tamaño del logo en pantallas pequeñas */
+        height: 40px;
+        margin-right: 50px;
+        z-index: 1000; /* Asegura que el logo esté por encima de otros elementos */
+
+    }
+}
