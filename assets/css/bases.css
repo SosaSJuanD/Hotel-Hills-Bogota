@@ -7,7 +7,7 @@
 
     --border-cabecera-mobile: #103D4A;
 
-    --boton-rojo: #B72E2E;
+    --boton-rojo: #006c84;
 
     --fuente-ceniza-claro: #666666;
     --fuente-ceniza-oscuro: #4F4C4C;
@@ -21,8 +21,8 @@
     --background-footer: #333333;
 
 
-    --montserrat: 'Montserrat', sans-serif;
-    --open-sans: 'Open Sans', sans-serif;
+    --montserrat: 'Abhaya Libre', serif !important;
+    --open-sans: 'Abhaya Libre', serif !important;
 }
 
 body {

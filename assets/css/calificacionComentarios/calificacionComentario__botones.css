@@ -1,7 +1,7 @@
 .comentarios__boton {
     color: var(--boton-rojo);
 
-    font-family: Pacifico, cursive;
+    font-family: var(--open-sans);
 
     border-color: var(--boton-rojo);
 
@@ -11,7 +11,7 @@
 .calificacion__boton{
     color: var(--boton-rojo);
 
-    font-family: Pacifico, cursive;
+    font-family: var(--open-sans);
 
     border-color: var(--boton-rojo);
 
