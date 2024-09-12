@@ -9,6 +9,7 @@
         display: block;
         max-width: 8rem;
         max-height: 5rem;
-        margin-right: 100px;
+        margin-right: 10px;
+        margin-left: 120px;
     }
 }
