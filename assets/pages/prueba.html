@@ -1,63 +1,74 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Hills Bogotá</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        /* Para centrar el modal */
-        .modal-content {
-            margin: auto;
-        }
-    </style>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HOTEL HILLS BOGOTA</title>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
+        <link href="./assets/css/normalize.css" rel="stylesheet" />
+        <link href="./assets/css/reset.css" rel="stylesheet" />
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <!-- whatsapp -->
+
+        <link rel="stylesheet" href="assets/css/whatsappIcon.css">
+        <link rel="stylesheet" href="./assets/css/footer/newfooter.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap" rel="stylesheet">
+    </head>
 <body>
-    <!-- Modal -->
-    <div class="modal fade" id="dataPolicyModal" tabindex="-1" role="dialog" aria-labelledby="dataPolicyModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="dataPolicyModalLabel">Política de Tratamiento de Datos</h5>
+    
+    <footer class="footer-custom">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Columna 1: Descripción del hotel -->
+                <div class="col-md-4">
+                    <img src="logo-hotel.png" alt="Logo Hotel" class="footer-logo">
+                    <p>Hotel de negocios ubicado a menos de 5 km. del Aeropuerto AICM Internacional de la CDMX, en donde puedes no sólo hospedarte y descansar, sino realizar reuniones de trabajo, sesiones o eventos sociales.</p>
+                    <p>Restaurante con cocina nacional e internacional, cafetería y bar, déjanos consentirte mientras trabajas o descansas.</p>
+                    <p><strong>HOTEL RIAZOR</strong></p>
+                    <p><strong>Superamos tus expectativas</strong></p>
                 </div>
-                <div class="modal-body">
-                    <form id="dataPolicyForm">
-                        <div class="form-group">
-                            <label for="email">Correo electrónico:</label>
-                            <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo" required>
-                        </div>
-                        <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="dataPolicyCheck" required>
-                            <label class="form-check-label" for="dataPolicyCheck">Acepto la <a href="#" target="_blank">política de tratamiento de datos</a></label>
-                        </div>
-                    </form>
+    
+                <!-- Columna 2: Información de contacto -->
+                <div class="col-md-4">
+                    <p><i class="fas fa-phone"></i> +52 55 6764 9098</p>
+                    <p><i class="fas fa-phone"></i> +52 55 4330 1515</p>
+                    <p><i class="fas fa-phone"></i> +52 55 6913 7336</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:reservaciones@hotelriazor.mx">reservaciones@hotelriazor.mx</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Viaducto Miguel Alemán 297, Ciudad de México, C.P. 08310</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <p>Atención a clientes</p>
+                    <p>Bolsa de trabajo</p>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" id="submitForm">Enviar</button>
+    
+                <!-- Columna 3: Enlaces rápidos y logos -->
+                <div class="col-md-4">
+                    <ul class="quick-links">
+                        <li><a href="#">Habitaciones</a></li>
+                        <li><a href="#">Eventos</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Gastronomía</a></li>
+                        <li><a href="#">Experiencia</a></li>
+                    </ul>
+                    <p>¡UN SERVICIO DE EXCELENCIA!</p>
+                    <div class="certification-logos">
+                        <img src="logo1.png" alt="Certificado 1">
+                        <img src="logo2.png" alt="Certificado 2">
+                        <img src="logo3.png" alt="Certificado 3">
+                        <img src="logo4.png" alt="Certificado 4">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <script>
-        // Mostrar el modal automáticamente al cargar la página
-        $(document).ready(function () {
-            $('#dataPolicyModal').modal('show');
-
-            // Acción al enviar el formulario
-            $('#submitForm').click(function () {
-                if ($('#dataPolicyForm')[0].checkValidity()) {
-                    alert('Formulario enviado con éxito');
-                    $('#dataPolicyModal').modal('hide');
-                } else {
-                    alert('Por favor completa todos los campos.');
-                }
-            });
-        });
-    </script>
+    </footer>
+    
 </body>
 </html>

@@ -4,6 +4,16 @@
     top: 0  !important;
     width: 100%;  
     z-index: 2;  
+
+    background-color: rgba(110, 181, 192, 0.8);/* Color de fondo */
+    z-index: 3; /* Asegura que el logo esté por encima de otros elementos */ 
+    position: fixed  !important;
+    top: 0;
+    width: 100%;
+    
+}
+body {
+    padding-top: 70px; /* Asegúrate de que sea suficiente para cubrir la altura de la navbar */
 }
 
 .navbar-custom .container-fluid {
@@ -29,7 +39,7 @@
 .navbar-nav {
     display: flex;
     align-items: center; /* Alinea verticalmente los ítems del menú */
-    margin-left: auto; /* Empuja el menú hacia la derecha */
+    margin: auto; /* Empuja el menú hacia la derecha */
 }
 
 .navbar-nav .nav-item {

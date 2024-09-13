@@ -1,0 +1,61 @@
+.footer-custom {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-custom .container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-custom .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-custom .col-md-4 {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-custom img.footer-logo {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.footer-custom p {
+    line-height: 1.6;
+}
+
+.footer-custom a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-custom a:hover {
+    text-decoration: underline;
+}
+
+.footer-custom .social-links a {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.footer-custom .quick-links li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-custom .quick-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-custom .certification-logos img {
+    max-width: 50px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
