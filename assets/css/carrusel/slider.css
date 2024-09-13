@@ -1,73 +1,71 @@
-.gallery-section {
+
+.cards-section {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en pantallas más pequeñas */
+    gap: 20px; /* Espacio entre tarjetas */
+    padding: 20px;
     position: relative;
+   
 }
 
-.carousel {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    height: 300px; /* Ajusta esta altura según tus necesidades */
-    overflow: hidden; /* Esconde cualquier contenido que sobresalga */
-    z-index: 1;
-}
-
-.carousel img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Asegura que las imágenes llenen el contenedor sin distorsionarse */
-}
-
-/* Ajusta el contenedor del carrusel para pantallas más pequeñas */
-@media (max-width: 767px) {
-    .carousel {
-        height: auto; /* Permite que la altura del carrusel se ajuste según el contenido */
-        justify-content: center;
-    }
-
-    .carousel img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-.thumbnails {
+.cards-container {
+    display: flex;
     justify-content: center;
-    margin-top: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px; /* Ajusta este valor según el diseño deseado */
+    margin: 0 auto; /* Centra el contenedor en pantallas grandes */
+}
+.card {
+    width: 100%;
+    max-width: 300px; /* Ajusta este valor según el diseño deseado */
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.card-body {
+    padding: 15px;
+}
+.card-title {
+    margin: 0;
+    font-size: 1.25rem;
 }
 
-.thumbnails img {
-    cursor: pointer;
-    width: 100px;
-    margin: 0 10px;
-    transition: transform 0.3s;
+.card-text {
+    color: #555;
 }
 
-.thumbnails img:hover {
-    transform: scale(1.1);
+/* Efecto de hover para las tarjetas */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Para asegurar que el carrusel siempre pase por debajo del header */
-#galleryCarousel {
-    margin-top: 20px;
-}
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 767px) {
+    .cards-section {
+        padding: 10px;
+    }
 
-.carousel-control-prev,
-.carousel-control-next {
-    width: 5%;
-    z-index: 2;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-size: 50%, 50%;
-}
-
-/* Para pantallas grandes */
-@media (min-width: 768px) {
-    .thumbnails {
-        display: flex;
+    .card {
+        max-width: 100%;
     }
 }
+/* Centrar tarjetas  */
+.planes {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center;    /* Centra el contenido verticalmente, si es necesario */
+    flex-direction: column; /* Para que los elementos se apilen verticalmente */
+  }
