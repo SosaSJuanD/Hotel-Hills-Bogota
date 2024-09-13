@@ -1,6 +1,9 @@
 .navbar-custom {
-    background-color: #6eb5c0; /* Color de fondo */
-    z-index: 1000; /* Asegura que el logo esté por encima de otros elementos */ 
+    background-color: #6eb5c0; 
+    position: fixed !important; 
+    top: 0  !important;
+    width: 100%;  
+    z-index: 2;  
 }
 
 .navbar-custom .container-fluid {
