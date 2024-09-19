@@ -1,8 +1,8 @@
 .footer-custom {
-    background-color: #000;
+    background-color: rgb(76,88,102);/* Color de fondo */
     color: #fff;
     padding: 40px 0;
-    font-family: 'Arial', sans-serif;
+    font-family: var(--open-sans);
 }
 
 .footer-custom .container-fluid {

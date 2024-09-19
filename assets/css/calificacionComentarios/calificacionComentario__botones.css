@@ -6,6 +6,7 @@
     border-color: var(--boton-rojo);
 
     margin-top: 1.25rem;
+    text-decoration: none;
 }
 
 .calificacion__boton{
@@ -16,5 +17,7 @@
     border-color: var(--boton-rojo);
 
     margin-top: 1.25rem;
+    
+    text-decoration: none;
 
 }

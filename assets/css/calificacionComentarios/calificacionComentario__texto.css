@@ -1,3 +1,4 @@
 .calificacionComentario__texto{
-    font-family: Pacifico, cursive;
+    font-family: var(--open-sans);
+    text-decoration: none;
 }
