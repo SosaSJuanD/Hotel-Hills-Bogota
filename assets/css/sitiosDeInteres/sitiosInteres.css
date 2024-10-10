@@ -42,11 +42,6 @@
     text-align: center;
 }
 
-.contenidoPrincipal-cursos-link span {
-    font-size: 1em; /* Tamaño del texto relativo al tamaño de la tarjeta */
-    padding: 0 10px; /* Espaciado para evitar que el texto quede pegado a los bordes */
-    box-sizing: border-box; /* Incluye padding en el tamaño total del elemento */
-}
 
 
 
@@ -70,7 +65,7 @@
         flex-direction: column;
     }
     .contenidoPrincipal-cursos-link{
-        width: 100%;
+        width: 90%;
     }
 
 }

@@ -1,74 +1,158 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>HOTEL HILLS BOGOTA</title>
-        <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
-        <link href="./assets/css/normalize.css" rel="stylesheet" />
-        <link href="./assets/css/reset.css" rel="stylesheet" />
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habitaciones con Galería</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-        <!-- whatsapp -->
+    .habitacion {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -16px;
+    }
 
-        <link rel="stylesheet" href="assets/css/whatsappIcon.css">
-        <link rel="stylesheet" href="./assets/css/footer/newfooter.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap" rel="stylesheet">
-    </head>
+    .description {
+      flex: 1;
+      padding: 16px;
+      min-width: 300px;
+    }
+
+    .gallery-section {
+      flex: 2;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      min-width: 300px;
+    }
+
+    .main-image img {
+      width: 100%;
+      height: auto;
+    }
+
+    .thumbnails {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 16px;
+    }
+
+    .thumbnails img {
+      width: 32%;
+      height: auto;
+      cursor: pointer;
+      border: 1px solid #ccc;
+    }
+
+    .thumbnails img:hover {
+      border: 1px solid #777;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .thumbnails {
+        display: none; /* Oculta las miniaturas en pantallas pequeñas */
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      .thumbnails img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
 <body>
-    
-    <footer class="footer-custom">
-        <div class="container-fluid">
-            <div class="row">
-                <!-- Columna 1: Descripción del hotel -->
-                <div class="col-md-4">
-                    <img src="logo-hotel.png" alt="Logo Hotel" class="footer-logo">
-                    <p>Hotel de negocios ubicado a menos de 5 km. del Aeropuerto AICM Internacional de la CDMX, en donde puedes no sólo hospedarte y descansar, sino realizar reuniones de trabajo, sesiones o eventos sociales.</p>
-                    <p>Restaurante con cocina nacional e internacional, cafetería y bar, déjanos consentirte mientras trabajas o descansas.</p>
-                    <p><strong>HOTEL RIAZOR</strong></p>
-                    <p><strong>Superamos tus expectativas</strong></p>
-                </div>
-    
-                <!-- Columna 2: Información de contacto -->
-                <div class="col-md-4">
-                    <p><i class="fas fa-phone"></i> +52 55 6764 9098</p>
-                    <p><i class="fas fa-phone"></i> +52 55 4330 1515</p>
-                    <p><i class="fas fa-phone"></i> +52 55 6913 7336</p>
-                    <p><i class="fas fa-envelope"></i> <a href="mailto:reservaciones@hotelriazor.mx">reservaciones@hotelriazor.mx</a></p>
-                    <p><i class="fas fa-map-marker-alt"></i> Viaducto Miguel Alemán 297, Ciudad de México, C.P. 08310</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                    <p>Atención a clientes</p>
-                    <p>Bolsa de trabajo</p>
-                </div>
-    
-                <!-- Columna 3: Enlaces rápidos y logos -->
-                <div class="col-md-4">
-                    <ul class="quick-links">
-                        <li><a href="#">Habitaciones</a></li>
-                        <li><a href="#">Eventos</a></li>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="#">Gastronomía</a></li>
-                        <li><a href="#">Experiencia</a></li>
-                    </ul>
-                    <p>¡UN SERVICIO DE EXCELENCIA!</p>
-                    <div class="certification-logos">
-                        <img src="logo1.png" alt="Certificado 1">
-                        <img src="logo2.png" alt="Certificado 2">
-                        <img src="logo3.png" alt="Certificado 3">
-                        <img src="logo4.png" alt="Certificado 4">
-                    </div>
-                </div>
-            </div>
+
+<div class="container mt-4">
+  <!-- Navegación de pestañas para habitaciones -->
+  <ul class="nav nav-tabs" id="roomTabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="room-201-tab" data-toggle="tab" href="#room-201" role="tab" aria-controls="room-201" aria-selected="true">201</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="room-202-tab" data-toggle="tab" href="#room-202" role="tab" aria-controls="room-202" aria-selected="false">202</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="room-203-tab" data-toggle="tab" href="#room-203" role="tab" aria-controls="room-203" aria-selected="false">203</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="room-204-tab" data-toggle="tab" href="#room-204" role="tab" aria-controls="room-204" aria-selected="false">204</a>
+    </li>
+  </ul>
+
+  <!-- Contenido de las pestañas con galería de fotos -->
+  <div class="tab-content" id="roomTabContent">
+    <!-- Galería de la habitación 201 -->
+    <div class="tab-pane fade show active" id="room-201" role="tabpanel" aria-labelledby="room-201-tab">
+      <h2 class="container" style="text-align: center;">Habitación 201</h2>
+      <div class="habitacion container">
+        <div class="description">
+          <h3>Descripción</h3>
+          <p>La Habitación 201 es espaciosa y cómoda, con una cama king size, Wi-Fi gratuito, aire acondicionado y un baño privado con todas las comodidades.</p>
         </div>
-    </footer>
-    
+
+        <div class="gallery-section">
+          <!-- Galería principal, siempre visible en pantallas grandes -->
+          <div class="main-image">
+            <img src="/assets/img/habitaciones/habitacion201-1.jpg" alt="Habitación 201">
+          </div>
+
+          <!-- Carrusel solo en pantallas pequeñas -->
+          <div id="galleryCarousel201" class="carousel slide d-md-none" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/assets/img/habitaciones/habitacion201-1.jpg" class="d-block w-100" alt="Habitación 201">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/img/habitaciones/habitacion201-2.jpg" class="d-block w-100" alt="Vista lateral">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/img/habitaciones/habitacion201-3.jpg" class="d-block w-100" alt="Vista del baño">
+              </div>
+              <div class="carousel-item">
+                <img src="/assets/img/habitaciones/habitacion201-4.jpg" class="d-block w-100" alt="Vista nocturna">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel201" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel201" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+
+          <!-- Thumbnails solo visibles en pantallas grandes -->
+          <div class="thumbnails d-none d-md-flex">
+            <img src="/assets/img/habitaciones/habitacion201-2.jpg" alt="Vista lateral" onclick="document.querySelector('#room-201 .main-image img').src='/assets/img/habitaciones/habitacion201-2.jpg'">
+            <img src="/assets/img/habitaciones/habitacion201-3.jpg" alt="Vista del baño" onclick="document.querySelector('#room-201 .main-image img').src='/assets/img/habitaciones/habitacion201-3.jpg'">
+            <img src="/assets/img/habitaciones/habitacion201-4.jpg" alt="Vista nocturna" onclick="document.querySelector('#room-201 .main-image img').src='/assets/img/habitaciones/habitacion201-4.jpg'">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Replicar para las habitaciones 202, 203, 204 -->
+    <!-- Ejemplo para la habitación 202 -->
+    <div class="tab-pane fade" id="room-202" role="tabpanel" aria-labelledby="room-202-tab">
+      <!-- Repetir la estructura como para la habitación 201 -->
+    </div>
+    <!-- Más habitaciones según el mismo patrón... -->
+  </div>
+</div>
+
+<!-- JS de Bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>

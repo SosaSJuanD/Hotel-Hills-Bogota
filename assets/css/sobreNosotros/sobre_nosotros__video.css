@@ -1,0 +1,13 @@
+.sobre_nosotros__video {
+    display: block;
+    margin: 20px auto; /* Centra el video horizontalmente */
+}
+
+@media screen and (max-width: 1024px) {
+    .sobre_nosotros__video {
+        display: block;
+        margin: 20px auto;
+        width: 90%; /* Reduce el tamaño del video a un 90% del ancho disponible */
+        max-width: 300px; /* Ajusta el tamaño máximo del video */
+    }
+}

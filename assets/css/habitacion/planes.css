@@ -1,8 +1,13 @@
 .planes {
-    background-color: var(--background-ceniza-claro);
-    
+    background-color: var(--ceniza-claro);
     padding-top: 3rem;
     padding-bottom: 3rem;
+    
+    /* Centrar tarjetas  */
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center;    /* Centra el contenido verticalmente, si es necesario */
+    flex-direction: column; /* Para que los elementos se apilen verticalmente */
 }
 
 .planes__titulo {
@@ -26,7 +31,7 @@
     display: flex;
     flex-direction: column;
 
-    background-color: var(--background-blanco);
+    background-color: var(--auxliar-azul);
 
     width: 100%;
     max-width: 300px;
@@ -48,7 +53,7 @@
 
     border-bottom: 1px solid var(--background-azul-claro);
     
-    color: #6eb5c0 !important;
+    color: var(--secundario-gris) !important;
 }
 
 .tarjetas__contenido {
@@ -63,11 +68,11 @@
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
 
-    color: #6eb5c0 !important;
+    color: var(--secundario-gris) !important;
 }
 
 .tarjetas__texto {
-    color: var(--fuente-ceniza-oscuro);
+    color: var(--principal-gris);
     line-height: 28px;
 }
 
@@ -89,29 +94,6 @@
     background-color: #006c84 !important;
 }
 
-.tarjetas--start {
-    color: var(--planes-card-start);
-}
-
-.tarjetas--ultra {
-    color: var(--planes-card-ultra);
-}
-
-.tarjetas--mega {
-    color: var(--planes-card-mega);
-}
-
-.tarjetas__boton--start {
-    border-color: var(--planes-card-start);
-}
-
-.tarjetas__boton--ultra {
-    border-color: var(--planes-card-ultra);
-}
-
-.tarjetas__boton--mega {
-    border-color: var(--planes-card-mega);
-}
 
 .tarjetas__imagen {
     width: 100%;

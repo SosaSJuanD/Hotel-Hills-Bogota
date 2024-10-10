@@ -12,7 +12,7 @@
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
-    height: 300px; /* Ajusta esta altura según tus necesidades */
+    height: 400px; /* Ajusta esta altura según tus necesidades */
     overflow: hidden; /* Esconde cualquier contenido que sobresalga */
     z-index: 1;
 }
@@ -20,8 +20,11 @@
 .head-carousel img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Asegura que las imágenes llenen el contenedor sin distorsionarse */
+    object-fit: contain; /* Cambia de 'cover' a 'contain' para que la imagen se ajuste sin recorte */
+    max-height: 400px; /* Limita la altura máxima de las imágenes */
 }
+
+
 
 /* Ajusta el contenedor del carrusel para pantallas más pequeñas */
 @media (max-width: 767px) {
@@ -34,23 +37,6 @@
         width: 100%;
         height: auto;
     }
-}
-
-/* Ajusta la sección de miniaturas si se usa */
-.head-thumbnails {
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.head-thumbnails img {
-    cursor: pointer;
-    width: 100px;
-    margin: 0 10px;
-    transition: transform 0.3s;
-}
-
-.head-thumbnails img:hover {
-    transform: scale(1.1);
 }
 
 /* Para asegurar que el carrusel siempre pase por debajo del header */
@@ -68,11 +54,4 @@
 .head-carousel .carousel-control-prev-icon,
 .head-carousel .carousel-control-next-icon {
     background-size: 50%, 50%;
-}
-
-/* Para pantallas grandes */
-@media (min-width: 768px) {
-    .head-thumbnails {
-        display: flex;
-    }
 }

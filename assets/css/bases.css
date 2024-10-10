@@ -1,24 +1,12 @@
 :root {
-    --background-llamada-mobile: #00161C;
-    --background-blanco: #FFFFFF;
-    --background-azul-claro: #DFE3F5;
-    --background-ceniza-claro: #F7F4F4;
-    --background-ceniza-medio: #D9D9D9;
+    --ceniza-claro: #F7F4F4;
 
-    --border-cabecera-mobile: #103D4A;
-
-    --boton-rojo: #006c84;
-
-    --fuente-ceniza-claro: #666666;
-    --fuente-ceniza-oscuro: #4F4C4C;
-
-    --planes-card-start: #035A76;
-    --planes-card-ultra: #690F8E;
-    --planes-card-mega: #B00024;
-
-    --fuente-enlace: #0006FF;
-
-    --background-footer: #333333;
+    /* colores oficilaes */
+    --principal-gris: #4C5866;
+    --secundario-gris: #E2E8E4;
+    --secundario-azul: #006C84;
+    --auxliar-azul: #6EB5C0;
+    
 
 
     --montserrat: 'Abhaya Libre', serif !important;
@@ -37,7 +25,7 @@ body {
     max-width: 350px;
     box-sizing: border-box;
     padding: 1rem 2rem;
-    border: 1px solid var(--boton-rojo);
+    border: 1px solid var(--auxliar-azul);
     border-radius: 5px;
 }
 

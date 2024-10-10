@@ -1,23 +1,21 @@
-.comentarios__boton {
-    color: var(--boton-rojo);
+.comentarios__boton{
+    color: var(--secundario-azul);
 
     font-family: var(--open-sans);
 
-    border-color: var(--boton-rojo);
+    border-color: var(--secundario-azul);
 
     margin-top: 1.25rem;
     text-decoration: none;
 }
 
 .calificacion__boton{
-    color: var(--boton-rojo);
+    color: var(--secundario-azul);
 
     font-family: var(--open-sans);
 
-    border-color: var(--boton-rojo);
+    border-color: var(--secundario-azul) !important;
 
     margin-top: 1.25rem;
-    
     text-decoration: none;
-
 }
