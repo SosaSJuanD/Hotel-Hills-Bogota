@@ -1,5 +1,5 @@
 .footer-custom {
-    background-color: rgb(76,88,102);/* Color de fondo */
+    background-color: rgb(76, 88, 102); /* Color de fondo */
     color: #fff;
     padding: 40px 0;
     font-family: var(--open-sans);
@@ -22,8 +22,16 @@
 }
 
 .footer-custom img.footer-logo {
-    max-width: 100px;
+    max-width: 300px; /* Tamaño máximo para pantallas grandes */
     margin-bottom: 20px;
+    margin: 25px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .footer-custom img.footer-logo {
+        max-width: 150px; /* Tamaño máximo para pantallas pequeñas */
+    }
 }
 
 .footer-custom p {
