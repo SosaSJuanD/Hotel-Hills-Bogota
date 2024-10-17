@@ -1,5 +1,6 @@
+
 .footer-custom {
-    background-color: rgb(76, 88, 102); /* Color de fondo */
+    background-color: var(--secundario-azul); /* Color de fondo */
     color: #fff;
     padding: 40px 0;
     font-family: var(--open-sans);
@@ -21,49 +22,54 @@
     margin: 0 20px;
 }
 
-.footer-custom img.footer-logo {
-    max-width: 300px; /* Tamaño máximo para pantallas grandes */
+.footer-logo {
+    max-width: 250px; /* Tamaño máximo del logo en pantallas grandes */
+    width: 100%;
     margin-bottom: 20px;
-    margin: 25px;
 }
 
-/* Media query para pantallas pequeñas */
-@media (max-width: 768px) {
-    .footer-custom img.footer-logo {
-        max-width: 150px; /* Tamaño máximo para pantallas pequeñas */
-    }
+.footer__navegacion, .footer__social {
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
 }
 
-.footer-custom p {
-    line-height: 1.6;
+.footer__navegacion li, .footer__social li {
+    display: inline-block;
+    margin-right: 15px;
 }
 
-.footer-custom a {
+.footer__navegacion li a, .footer__social li a {
     color: #fff;
     text-decoration: none;
 }
 
-.footer-custom a:hover {
+.footer__midia img {
+    width: 42px;
+    height: 42px;
+}
+
+.footer__navegacion li a:hover, .footer__social li a:hover {
     text-decoration: underline;
 }
-
-.footer-custom .social-links a {
-    font-size: 18px;
-    margin-right: 10px;
+@media (max-width: 1024px) {
+    .footer-logo {
+        max-width: 200px; /* Tamaño más pequeño en pantallas medianas */
+    }
 }
-
-.footer-custom .quick-links li {
-    list-style: none;
-    margin-bottom: 10px;
-}
-
-.footer-custom .quick-links li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer-custom .certification-logos img {
-    max-width: 50px;
-    margin-right: 10px;
-    margin-top: 20px;
+@media (max-width: 768px) {
+    .footer-custom img.footer-logo {
+        max-width: 150px;
+    }
+    .footer-custom .row {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer__navegacion, .footer__social {
+        text-align: center;
+    }
+    .footer-logo {
+        max-width: 150px; /* Tamaño más pequeño en pantallas pequeñas */
+    }
 }

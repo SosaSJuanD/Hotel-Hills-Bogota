@@ -8,10 +8,22 @@
     margin: 0 -16px;
 }
 
+.habitacion_titulo, .description_titulo {
+    text-align: center;
+    margin: 1em auto;
+    color: var(--secundario-azul);
+    font-family: var(--open-sans);
+}
+
 .description {
     flex: 1;
     padding: 16px;
     min-width: 300px;
+}
+
+.description_texto {
+    text-align: justify;
+    color: var(--principal-gris);
 }
 
 .gallery-section {
@@ -27,6 +39,59 @@
     height: auto;
 }
 
+/* Galería estática para pantallas grandes */
+.gallery-images {
+    display: flex;
+    justify-content: space-between; /* Espacio entre las imágenes */
+    margin-top: 16px; /* Margen superior */
+}
+
+.gallery-images img {
+    width: 24%; /* Ajusta según tus necesidades */
+    height: auto;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: border 0.3s ease;
+}
+
+.gallery-images img:hover {
+    border: 1px solid #777;
+}
+
+/* Carrusel en pantallas pequeñas */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo de los controles */
+    border-radius: 50%; /* Opcional: redondear los controles */
+}
+
+/* Oculta la galería estática en pantallas pequeñas */
+@media (max-width: 1040px) {
+    .gallery-images {
+        display: none;
+    }
+}
+
+/* Oculta el carrusel en pantallas grandes */
+@media (min-width: 1041px) {
+    #galleryCarousel {
+        display: none;
+    }
+}
+
+/* Media query para pantallas menores a 700px */
+@media (max-width: 700px) {
+    .thumbnails {
+        display: none; /* Oculta las miniaturas en pantallas pequeñas */
+    }
+}
+
+/* Estilo para miniaturas en pantallas grandes */
 .thumbnails {
     display: flex;
     justify-content: space-between;
@@ -44,19 +109,9 @@
     border: 1px solid #777;
 }
 
-@media only screen and (max-width: 700px) {
-    .container {
-    flex-direction: column;
-    }
-
-    .thumbnails {
-    display: none; /* Oculta las miniaturas en pantallas pequeñas */
-    }
-}
-
-@media only screen and (max-width: 500px) {
+/* Estilos adicionales */
+@media (max-width: 500px) {
     .thumbnails img {
-    width: 100%;
+        width: 100%;
     }
 }
-

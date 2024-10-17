@@ -3,5 +3,5 @@
     margin-bottom: 1rem;
     font-family: var(--open-sans);
     text-align: justify;
-    color: #4c5866 !important; 
+    color: var(--osecundario-gris); 
 }

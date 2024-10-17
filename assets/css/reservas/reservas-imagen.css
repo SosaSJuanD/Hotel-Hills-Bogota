@@ -1,4 +1,20 @@
-.pagina__imagen{
+.reservas__paginas {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Alinea verticalmente las imágenes */
+    gap: 20px; /* Espacio entre las imágenes */
+    flex-wrap: wrap; /* Permite que los elementos se reorganicen en pantallas pequeñas */
+}
+
+.pagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.pagina__imagen {
     height: 200px;
     width: 200px;
     margin: 0 auto;
@@ -6,7 +22,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 80px 10px;
-    
 }
 
 @media (max-width: 768px) {
@@ -14,5 +29,9 @@
         height: 150px; 
         width: 150px;
         border-radius: 40px 5px; 
+    }
+
+    .reservas__paginas {
+        flex-direction: column; /* Cambia la disposición a columna en pantallas pequeñas */
     }
 }

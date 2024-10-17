@@ -1,25 +1,40 @@
+/* Estilo para el botón de WhatsApp */
 .whatsapp-icon {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 1000; /* Asegura que el logo esté por encima de otros elementos */
+    z-index: 1000;
 }
 
 .whatsapp-icon img {
-    width: 50px; /* Tamaño del logo, ajusta según sea necesario */
+    width: 50px;
     height: 50px;
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
-    .whatsapp-icon{
-        position: fixed;
-    }
-    .whatsapp-icon img {
-        width: 40px; /* Tamaño del logo en pantallas pequeñas */
-        height: 40px;
-        margin-right: 50px;
-        z-index: 1000; /* Asegura que el logo esté por encima de otros elementos */
+/* Estilo para el nuevo botón flotante */
+.nuevo-icon {
+    position: fixed;
+    bottom: 90px; /* Ajusta la distancia del segundo botón para que quede encima del de WhatsApp */
+    right: 20px;
+    z-index: 1000;
+}
 
+.nuevo-icon img {
+    width: 50px; /* Misma dimensión que el primer botón */
+    height: 50px;
+    cursor: pointer;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 768px) {
+    .whatsapp-icon img, 
+    .nuevo-icon img {
+        width: 40px; /* Tamaño ajustado para pantallas pequeñas */
+        height: 40px;
+    }
+
+    .nuevo-icon {
+        bottom: 70px; /* Ajusta la posición en pantallas pequeñas */
     }
 }
