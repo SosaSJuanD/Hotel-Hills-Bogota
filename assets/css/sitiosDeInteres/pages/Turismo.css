@@ -1,7 +1,7 @@
 body {
     font-family: var(--montserrat);
     margin: 0;
-    padding: 0;
+    padding: 20;
 }
 
 .flip-card-back-desc{
@@ -10,7 +10,7 @@ body {
 #sitios-interes {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px;
 }
 
 .sitios-interes-titulo {
@@ -118,7 +118,7 @@ body {
     }
 
     .flip-card {
-        width: 100vw; /* Ocupar el 100% del ancho de la ventana */
+        width: 90vw; /* Ocupar el 100% del ancho de la ventana */
         margin: 10px 0; /* Añade un poco de margen arriba y abajo entre las tarjetas */
     }
 

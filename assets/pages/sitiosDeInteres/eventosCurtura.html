@@ -26,6 +26,12 @@
     <link rel="stylesheet" href="/assets/css/reservas/reservas-imagen.css">
     <link rel="stylesheet" href="/assets/css/reservas/reservas-descripcion.css">
 
+    <link rel="stylesheet" href="../../css/calificacionComentarios/calificacionComentarios.css">
+    <link rel="stylesheet" href="../../css/calificacionComentarios/calificacionComentario__titulo.css">
+    <link rel="stylesheet" href="../../css/calificacionComentarios/calificacionComentario__texto.css">
+    <link rel="stylesheet" href="../../css/calificacionComentarios/calificacionComentario__botones.css">
+
+
     <link rel="stylesheet" href="/assets/css/whatsappIcon.css">
 
     <link rel="stylesheet" href="/assets/css/footer/newfooter.css">
@@ -51,20 +57,11 @@
             <div class="collapse navbar-collapse d-lg-none" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../../../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sobre">Sobre nosotros</a>
+                        <a class="nav-link" href="#sitios-interes">Sitios de interés</a>
                     </li>
                     
                     <li class="nav-item">
-                        <a class="nav-link" href="#habitaciones">Habitaciones</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#comentarios">Comentarios y Calificación</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sitios-interes">Sitios de interés</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#reservas">Reservas</a>
@@ -222,80 +219,87 @@
     </section>
     
     
-    <section class="reservas container" id="reservas">
-        <h3 class="reservas__titulo">Reserva con nosotros</h3>
-        <p class="reservas__descripcion">Conozca los disitntos medios para reservar</p>
+    <section class="CalificacionComentarios container" id="comentarios">
+        <h3 class="calificacionComentario__titulo">Calficaciones y comentarios</h3>
+        <p class="calificacionComentario__texto">Conozca la calificaicon de alguno de nuestros huespedes y dejamos tu opinion</p>
         
-        <div class="resevas__paginas">
-            <div class="pagina">
-                <a  target="_blank" href="./assets/pages/prueba.html">
-                    <img class="pagina__imagen" src="assets/img/reservas/whatsapp.jpg" alt="whaLogo">
-                </a>
-                <!-- <div class="persona__imagen persona__imagen--andreia"></div> -->
-                <span class="persona__nombre">WhatsApp</span>
-            </div>
+        <div class="comentarios">
+            <a target="_blank" href="https://www.google.com/search?q=hotel+hills+bogota+c&oq=hotel+hills+bogota+c&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRhAMggIAhBFGCcYOzIGCAMQRRg7MgoIBBAAGIAEGKIEMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEJNDEwNjhqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8#lrd=0x8e3f994dbbac75b5:0x9d15a1d997c66462,1,,,," class="comentarios__boton boton">Comentarios previos</a>
+        </div>
+        
+        <div class="calificar">
+            <a target="_blank" href="https://www.google.com/search?q=hotEL+HILLS+BOGOTA&oq=hotel+&gs_lcrp=EgZjaHJvbWUqBggBEEUYOzIGCAAQRRg5MgYIARBFGDsyBggCEEUYOzIGCAMQRRg8MgYIBBBFGDwyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgyMzE5ajBqMagCALACAA&sourceid=chrome&ie=UTF-8#lrd=0x8e3f994dbbac75b5:0x9d15a1d997c66462,3,,,," class="calificacion__boton boton">Deja tu calificaicon y comentario</a>
             
         </div>
     </section>
-
-
+    
     <section class="whatsapp-flotante">
         <div class="whatsapp-icon">
             <a href="assets/pages/prueba.html" target="_blank">
                 <img src="/assets/img/reservas/whatsapp-.png" alt="WhatsApp">
             </a>
         </div>
+        <!-- Segundo botón flotante (Nuevo) -->
+        <div class="nuevo-icon">
+            <a href="assets/pages/otro-enlace.html" target="_blank">
+                <img src="../../img/reservas/checkIn.jpg" alt="Nuevo Icono">
+            </a>
+        </div>
     </section>
-
-
-
-
-
-
     
+    <section class="reservas container" id="reservas">
+        <h3 class="reservas__titulo">Reserva con nosotros</h3>
+        <p class="reservas__descripcion">Conozca los distintos medios para reservar</p>
+        
+        <div class="reservas__paginas">
+            <div class="pagina">
+                <a target="_blank" href="./assets/pages/prueba.html">
+                    <img class="pagina__imagen" src="../../img/reservas/cloudbed.png" alt="cloudbedImg">
+                </a>
+                <span class="persona__nombre">CloudBed</span>
+            </div>
+    
+            <div class="pagina">
+                <a target="_blank" href="./assets/pages/prueba.html">
+                    <img class="pagina__imagen" src="../../img/reservas/whatsapp-.png" alt="whaLogo">
+                </a>
+                <span class="persona__nombre">WhatsApp</span>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer-custom" id="contacto">
         <div class="container-fluid">
             <div class="row">
-                <!-- Columna 1: Descripción del hotel -->
+            <!-- Columna 1: Logo con links debajo -->
                 <div class="col-md-4">
                     <img src="../../img/HGER.jpg" alt="Logo Hotel" class="footer-logo">
-                
+                    <ul class="footer__navegacion">
+                        <li class="footer__enlace"><a href="#">Sitios de interes</a></li>
+                        <li class="footer__enlace"><a href="#comentarios">Comentarios y calificaciones</a></li>
+                        <li class="footer__enlace"><a href="#reservas">Reservas</a></li>
+                        <li class="footer__enlace"><a href="#contacto">Contacto</a></li>
+                    </ul>
                 </div>
-    
-                <!-- Columna 2: Información de contacto -->
+                <!-- Columna 2: Información de contacto en el centro -->
                 <div class="col-md-4">
                     <span><i class="x"></i> <b>Contacto</b></span>
                     <p><i class="fas fa-envelope"></i> <a href="mailto:reservaciones@hotelriazor.mx">reservaciones@hotelriazor.mx</a></p>
-                    
-                    
                     <span><i class="fas fa-map-marker-alt"></i><b> Bogotá</b></span>
                     <p><i class="fas fa-phone"></i> 319552345</p>
                     <p><strong>Hotel Bogotá Hills</strong></p>
                     <p>Ubicado a solo 12 km del Aeropuerto Internacional El Dorado, el Hotel Bogotá Hills ofrece una experiencia única para viajeros de negocios y placer. No solo podrás disfrutar de un descanso cómodo y relajante, sino también de espacios ideales para reuniones, sesiones o eventos sociales.</p>
-
                 </div>
-
-                
-    
-                <!-- Columna 3: Enlaces rápidos y logos -->
+            <!-- Columna 3: Redes sociales a la derecha -->
                 <div class="col-md-4">
-                    <ul class="quick-links">
-                        <span>Atención a clientes</span>
-                        <li><a href="#">Sobre Nosotros</a></li>
-                        <li><a href="#">habitaciones</a></li>
-                        <li><a href="#">Comentarios y calificaciones</a></li>
-                        <li><a href="#">Gastronomía</a></li>
-                        <li><a href="#">Experiencia</a></li>
+                    <ul class="footer__social">
+                        <li><a href="https://www.facebook.com/profile.php?id=61564873090639" class="footer__midia"><img src="../../img/redes/facebook.png" alt="Ícono de Facebook"></a></li>
+                        <li><a href="https://www.instagram.com/hotelhillsbogota_oficial/" class="footer__midia"><img src="../../img/redes/instagram.png" alt="Ícono de Instagram"></a></li>
+                        <li><a href="#" class="footer__midia"><img src="../../img/redes/twitter.png" alt="Ícono de Twitter"></a></li>
                     </ul>
-                    <p>¡UN SERVICIO DE EXCELENCIA!</p>
-                    
                 </div>
             </div>
         </div>
     </footer>
-
-
-
 </body>
 </html>

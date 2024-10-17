@@ -23,9 +23,14 @@
 }
 
 .footer-logo {
-    max-width: 250px; /* Tamaño máximo del logo en pantallas grandes */
+    max-width: 200px; /* Tamaño máximo del logo en pantallas grandes */
     width: 100%;
     margin-bottom: 20px;
+    text-align: center;
+}
+.footer-custom .row {
+    /* flex-direction: column; */
+    text-align: center;
 }
 
 .footer__navegacion, .footer__social {
@@ -55,7 +60,7 @@
 }
 @media (max-width: 1024px) {
     .footer-logo {
-        max-width: 200px; /* Tamaño más pequeño en pantallas medianas */
+        max-width: 100px; /* Tamaño más pequeño en pantallas medianas */
     }
 }
 @media (max-width: 768px) {
@@ -68,6 +73,7 @@
     }
     .footer__navegacion, .footer__social {
         text-align: center;
+        
     }
     .footer-logo {
         max-width: 150px; /* Tamaño más pequeño en pantallas pequeñas */
