@@ -63,7 +63,7 @@
 
 .tarjetas__precio {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 2.2rem;
     text-align: center;
 
     margin-top: 1.25rem;
@@ -76,6 +76,7 @@
     color: var(--principal-gris);
     line-height: 28px;
     font-size: 20px;
+    text-align: center;
 }
 
 .tarjetas__boton {
